@@ -144,6 +144,16 @@
 		};
 /* End PBXCopyFilesBuildPhase section */
 
+/* Begin PBXContainerItemProxy section */
+		AFB6E63F233523D100D1431B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE6304A1DF9BB67005FFD01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFB6E63B233523AE00D1431B;
+			remoteInfo = "XDT99 Objerctive-C Classesa";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AF016E8322EA061800443077 /* XDTAs99Opcodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XDTAs99Opcodes.h; path = XDAssembler/XDTAs99Opcodes.h; sourceTree = "<group>"; };
 		AF016E8422EA061800443077 /* XDTAs99Opcodes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XDTAs99Opcodes.m; path = XDAssembler/XDTAs99Opcodes.m; sourceTree = "<group>"; };
@@ -160,6 +170,15 @@
 		AF157E011FBF4D4000679D82 /* XDTException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDTException.m; sourceTree = "<group>"; };
 		AF16C97923475DE900774F61 /* XDTools99Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XDTools99Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF16C97A23475DEA00774F61 /* XDTools99 Plus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "XDTools99 Plus-Info.plist"; path = "/Volumes/henrik/workspace/Applications/xdt99-wrapper/XDTools99/XDTools99 Plus-Info.plist"; sourceTree = "<absolute>"; };
+		AF1E51AF233F88E100188DC2 /* generateClasses.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generateClasses.py; sourceTree = "<group>"; };
+		AF1E51B1233F88E100188DC2 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		AF1E51B2233F88E100188DC2 /* base.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base.py; sourceTree = "<group>"; };
+		AF1E51B3233F88E100188DC2 /* const.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = const.py; sourceTree = "<group>"; };
+		AF1E51B5233F88E100188DC2 /* ObjP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjP.h; sourceTree = "<group>"; };
+		AF1E51B6233F88E100188DC2 /* ObjP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjP.m; sourceTree = "<group>"; };
+		AF1E51B7233F88E100188DC2 /* o2p.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = o2p.py; sourceTree = "<group>"; };
+		AF1E51B8233F88E100188DC2 /* p2o.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = p2o.py; sourceTree = "<group>"; };
+		AF1E51B9233F88E100188DC2 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
 		AF2D96A91DFABAA0006EE618 /* XDAssembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDAssembler.h; sourceTree = "<group>"; };
 		AF2D96AB1DFABF39006EE618 /* XDTAs99Symbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XDTAs99Symbols.h; path = XDAssembler/XDTAs99Symbols.h; sourceTree = "<group>"; };
 		AF2D96AC1DFABF39006EE618 /* XDTAs99Symbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XDTAs99Symbols.m; path = XDAssembler/XDTAs99Symbols.m; sourceTree = "<group>"; };
@@ -255,6 +274,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF1E51AE233F88E100188DC2 /* Wrapper Generator */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E51AF233F88E100188DC2 /* generateClasses.py */,
+				AF1E51B0233F88E100188DC2 /* objp */,
+			);
+			name = "Wrapper Generator";
+			path = "../Wrapper Generator";
+			sourceTree = "<group>";
+		};
+		AF1E51B0233F88E100188DC2 /* objp */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E51B1233F88E100188DC2 /* __init__.py */,
+				AF1E51B2233F88E100188DC2 /* base.py */,
+				AF1E51B3233F88E100188DC2 /* const.py */,
+				AF1E51B4233F88E100188DC2 /* data */,
+				AF1E51B7233F88E100188DC2 /* o2p.py */,
+				AF1E51B8233F88E100188DC2 /* p2o.py */,
+				AF1E51B9233F88E100188DC2 /* util.py */,
+			);
+			path = objp;
+			sourceTree = "<group>";
+		};
+		AF1E51B4233F88E100188DC2 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E51B5233F88E100188DC2 /* ObjP.h */,
+				AF1E51B6233F88E100188DC2 /* ObjP.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		AF2D96A81DFAB8DE006EE618 /* XDAssembler */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +387,7 @@
 		AFE630491DF9BB67005FFD01 = {
 			isa = PBXGroup;
 			children = (
+				AF1E51AE233F88E100188DC2 /* Wrapper Generator */,
 				AFE630551DF9BB67005FFD01 /* XDTools99 */,
 				AFADBC3E1DF9DD69000AD2F2 /* Resources */,
 				AFE630541DF9BB67005FFD01 /* Products */,
@@ -491,6 +544,23 @@
 		};
 /* End PBXHeadersBuildPhase section */
 
+/* Begin PBXLegacyTarget section */
+		AFB6E63B233523AE00D1431B /* XDT99 Objerctive-C Classes */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = AFB6E63C233523AE00D1431B /* Build configuration list for PBXLegacyTarget "XDT99 Objerctive-C Classes" */;
+			buildPhases = (
+			);
+			buildToolPath = /Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "XDT99 Objerctive-C Classes";
+			passBuildSettingsInEnvironment = 1;
+			productName = "XDT99 Objerctive-C Classesa";
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		AF16C94823475DE900774F61 /* XDTools99Plus */ = {
 			isa = PBXNativeTarget;
@@ -523,6 +593,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AFB6E640233523D100D1431B /* PBXTargetDependency */,
 			);
 			name = XDTools99;
 			productName = XDTools99;
@@ -539,6 +610,9 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = hackmac;
 				TargetAttributes = {
+					AFB6E63B233523AE00D1431B = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					AFE630521DF9BB67005FFD01 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 82LG3342G3;
@@ -562,6 +636,7 @@
 			targets = (
 				AFE630521DF9BB67005FFD01 /* XDTools99 */,
 				AF16C94823475DE900774F61 /* XDTools99Plus */,
+				AFB6E63B233523AE00D1431B /* XDT99 Objerctive-C Classes */,
 			);
 		};
 /* End PBXProject section */
@@ -655,6 +730,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AFB6E640233523D100D1431B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFB6E63B233523AE00D1431B /* XDT99 Objerctive-C Classes */;
+			targetProxy = AFB6E63F233523D100D1431B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AF08A73E22BD11B800770FC3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -716,6 +799,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.hackmac.xdtools99;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AFB6E63D233523AE00D1431B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AFB6E63E233523AE00D1431B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -882,6 +1005,15 @@
 			buildConfigurations = (
 				AF16C97723475DE900774F61 /* Debug */,
 				AF16C97823475DE900774F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFB6E63C233523AE00D1431B /* Build configuration list for PBXLegacyTarget "XDT99 Objerctive-C Classes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB6E63D233523AE00D1431B /* Debug */,
+				AFB6E63E233523AE00D1431B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
